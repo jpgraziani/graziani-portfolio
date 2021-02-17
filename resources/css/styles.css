@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&display=swap');
+@import url("https://use.typekit.net/ewr2end.css");
+
+/* ------------------------------------- */
+/* Global Styles */
+/* ------------------------------------- */
+:root {
+  --background: #ffffff;
+  --black: #151515;
+  --bkgMediumGray: #cccccc;
+  --bkgLightGray: #eeeeee;
+  --bodyCopyGray: #757575;
+  --titleBlack: #333333;
+  --card: rgba(31, 31, 34, 0.95);   
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+  font-family: "europa", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6em;
+  letter-spacing: .04em;
+  background-color: var(--bkgLightGray);
+}
+
+img {
+  width: 100%;
+}
+
+/* Titles: h1, h2, h3 */
+
+h1, h2 {
+  font-family: 'Lora', serif;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  margin: 1rem 0;
+}
+
+
+ol {
+  margin: 1rem;
+}
+
+/* links */
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:hover {
+  color: var(--titleBlack);
+}
+
+a:visited, a:active {
+  color: var(--titleBlack);
+}
+
+button {
+  padding: 1rem 1.5rem;
+  border: 3px solid white;
+  background-color: var(--black);
+  color: var(--bkgLightGray);
+}
+
+
+/* ------------------------------------- */
+/* End of Global Styles */
+/* ------------------------------------- */
+
+/* ------------------------------------- */
+/* Header */
+/* ------------------------------------- */
+
+header {
+  background-color: var(--background);
+  padding-top: 1rem;
+}
+
+header p {
+  margin-top: .5rem;
+  text-align: center;
+}
+
+/* nav */
+header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+header nav ul li a {
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;;
+}
+
+/* ------------------------------------- */
+/* End of Header */
+/* ------------------------------------- */
+
+/* ------------------------------------- */
+/* Home */
+/* ------------------------------------- */
+
+#home {
+  background-color: var(--black);
+}
+
+#home, #about, #projects, #contact, #message {
+  padding: 3rem 0;
+}
+
+#home p {
+  font-size: 2rem;
+  line-height: 1.35em;
+  letter-spacing: .01em;
+  color: var(--bkgLightGray);
+}
+
+/* ------------------------------------- */
+/* End of Home */
+/* ------------------------------------- */
+
+/* ------------------------------------- */
+/* About */
+/* ------------------------------------- */
+
+.rounded {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+
+/* ------------------------------------- */
+/* End of About */
+/* ------------------------------------- */
+
+/* ------------------------------------- */
+/* Projects */
+/* ------------------------------------- */
+
+#projects {
+  background-color: var(--black);
+  color: var(--bkgLightGray);
+  padding-bottom: 3rem;
+}
+
+#projects h3 {
+  margin: .5rem 0;
+}
+
+/* project cards */
+.link-card:link, .link-card:hover, .link-card:visited, .link-card:active {
+  color: var(--bkgLightGray);
+}
+
+.card  {
+  background-color: var(--card);
+  margin: .75rem 0;
+  padding: 2rem;
+  min-height: 300px;
+  max-height: 450px;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card h3 {
+  font-size: 1.75rem;
+  letter-spacing: -.01em;
+}
+
+.stack-text {
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.card-text {
+  color: var(--bodyCopyGray);
+}
+
+.ul-project-links {
+  display: flex;
+  margin-top: 1rem;
+  list-style: none;
+  font-size: 1rem
+}
+
+.ul-project-links li:nth-child(2) {
+  margin-left: 1rem;
+}
+
+.ul-project-links li:nth-child(3) {
+  margin-left: 1rem;
+}
+
+.live-site-link:link, .live-site-link:hover, .live-site-link:visited, .live-site-link:active {
+  color: var(--bkgLightGray);
+}
+
+/* ------------------------------------- */
+/* End of Projects */
+/* ------------------------------------- */
+
+/* ------------------------------------- */
+/* Contact */
+/* ------------------------------------- */
+#message {
+  background-color: var(--black);
+  color: var(--bkgLightGray);
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+/* ------------------------------------- */
+/* End of Contact */
+/* ------------------------------------- */
+
+/* ------------------------------------- */
+/* Footer */
+/* ------------------------------------- */
+footer {
+  text-align: center;
+}
+
+footer p {
+  padding-bottom: 1rem;
+}
+
+footer hr {
+  margin-bottom: 2rem;
+}
+/* ------------------------------------- */
+/* End of Footer */
+/* ------------------------------------- */
+
+/* ------------------------------------- */
+/* Groups & Items (mobil first) */
+/* ------------------------------------- */
+.wrapper {
+  width: 100vw;
+}
+
+.group, .group-projects, .group-about, .group-contact, .group-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.item-projects {
+  margin: 0 auto;
+}
+
+/* ------------------------------------- */
+/* End of Groups & Items (mobil first) */
+/* ------------------------------------- */
+/* ------------------------------------- */
+/* Groups & Items (desktop) */
+/* ------------------------------------- */
+@media all and (min-width: 720px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 2rem 3rem 2rem 4rem;
+  }
+
+  #home p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.85rem;
+    line-height: 1.5em;
+    letter-spacing: .01em;
+    max-width: 800px;
+  }
+
+  #about .group-about, #projects .group-projects, #contact .group-contact, #message .group-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px
+  }
+
+  #contact .group-contact {
+    justify-content: flex-start;
+    
+  }
+
+  .group-about h2, .group-projects h2, .group-contact h2, .group-form h2 {
+    width: 100%;
+  }
+
+  .item-about, .item-projects {
+    width: 48%;
+  }
+
+  .item-contact p {
+    max-width: 300px;
+  }
+
+  .item-contact ol {
+    margin: 0 4rem;
+  }
+
+/* ------------------------------------- */
+/* End of Groups & Items (desktop) */
+/* ------------------------------------- */
